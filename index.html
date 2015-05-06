@@ -1228,6 +1228,10 @@ new Author({id: 1, first_name: 'User'})
       model is saved, as well as a <tt>"saved"</tt> event either way. If you wish to modify the query
       when the "saving" event is fired, the knex query object should be available on <tt>options.query</tt>.
     </p>
+    
+    <p>
+      <b>Warning</b>: with <tt>{patch: true}</tt> no events (creating, updating, ...) fired!
+    </p>  
 
     <p id="Model-destroy">
       <b class="header">destroy</b><code>model.destroy</code>
